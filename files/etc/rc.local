@@ -19,6 +19,7 @@ fi
 
 sleep 20;
 
+_IP=$(hostname -I) || true
 if [ "$_IP" ]; then
       echo "[Access Point Setup] - The wifi is already
 connected, no access point needed"
